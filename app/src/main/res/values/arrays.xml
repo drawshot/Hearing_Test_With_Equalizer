@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_list">
+        <item>@string/list_item_01</item>
+        <item>@string/list_item_02</item>
+        <item>@string/list_item_03</item>
+        <item>@string/list_item_04</item>
+        <item>@string/list_item_05</item>
+        <item>@string/list_item_06</item>
+        <item>@string/list_item_07</item>
+        <item>@string/list_item_08</item>
+        <item>@string/list_item_09</item>
+        <item>@string/list_item_10</item>
+        <item>@string/list_item_11</item>
+        <item>@string/list_item_12</item>
+        <item>@string/list_item_13</item>
+        <item>@string/list_item_14</item>
+        <item>@string/list_item_15</item>
+        <item>@string/list_item_16</item>
+        <item>@string/list_item_17</item>
+        <item>@string/list_item_18</item>
+        <item>@string/list_item_19</item>
+        <item>@string/list_item_20</item>
+        <item>@string/list_item_21</item>
+        <item>@string/list_item_22</item>
+        <item>@string/list_item_23</item>
+        <item>@string/list_item_24</item>
+        <item>@string/list_item_25</item>
+    </string-array>
+
+</resources>

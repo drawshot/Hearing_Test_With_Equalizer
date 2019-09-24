@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8eae9"
+    tools:context=".MainTestPre">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#1db6a7"
+        app:layout_constraintBottom_toTopOf="@+id/relative_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/borderbottom"
+        android:gravity="left"
+        android:text="Automated Hearing Test"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/volume_maintext_line_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/box_border"
+        app:layout_constraintBottom_toTopOf="@+id/relative_line2_down"
+        app:layout_constraintEnd_toStartOf="@+id/relative_line2_right"
+        app:layout_constraintStart_toStartOf="@+id/relative_line2_left"
+        app:layout_constraintTop_toTopOf="@+id/relative_line2_up">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/new_icon_ear_test"
+        app:layout_constraintBottom_toTopOf="@+id/volume_line_down"
+        app:layout_constraintEnd_toStartOf="@+id/maintest_btn_right"
+        app:layout_constraintStart_toStartOf="@+id/maintest_btn_left"
+        app:layout_constraintTop_toTopOf="@+id/volume_line_up" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Performing automated hearing test.\nIf you hear a sound, press the button below."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/relative_line2_right"
+        app:layout_constraintStart_toStartOf="@+id/relative_line2_left"
+        app:layout_constraintTop_toTopOf="@+id/text_line_up" />
+
+    <Button
+        android:id="@+id/btn_test_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/box_border"
+        android:text="START"
+        android:textColor="#4ac5b9"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/maintest_btn_down"
+        app:layout_constraintEnd_toStartOf="@+id/relative_line2_right"
+        app:layout_constraintStart_toStartOf="@+id/relative_line2_left"
+        app:layout_constraintTop_toTopOf="@+id/maintest_btn_up" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/relative_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/volume_maintext_line_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/relative_line2_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/relative_line2_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/relative_line2_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/relative_line2_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/volume_line_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/volume_line_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/text_line_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/maintest_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/maintest_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/maintest_btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/maintest_btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+</android.support.constraint.ConstraintLayout>
+

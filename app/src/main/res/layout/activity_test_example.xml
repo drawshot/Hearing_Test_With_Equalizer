@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e6eb"
+    tools:context="com.changwon.wooogi.frequency.MainTest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#323743"
+        android:id="@+id/relativeLayout1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="29.8dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="검사화면"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/card_view3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="10dp"-->
+    <!--app:cardCornerRadius="4dp">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center">-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소리가 들리면 아래 버튼을 눌러주세요."
+        android:textSize="15sp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/btn_left"
+        android:layout_centerHorizontal="true" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/woogitest"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="0"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_alignBaseline="@+id/btn_left"-->
+        <!--android:layout_alignBottom="@+id/btn_left"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/newhearingbutton"
+        android:onClick="onClick"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+
+    <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/card_view2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="33dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="지속시간 (s)"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:textColor="@color/secondary_text" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/editTextDuration"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:gravity="center"-->
+            <!--android:inputType="number"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="3"-->
+            <!--android:textColor="@color/primary"-->
+            <!--android:textIsSelectable="false"-->
+            <!--android:textSize="20sp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EDC957">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="데시벨(dB)"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/secondary_text" />
+            <!--<EditText-->
+            <!--android:id="@+id/testText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="text"-->
+            <!--android:textColor="@color/secondary_text"-->
+            />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/card_view1"
+        android:layout_alignStart="@+id/card_view1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#69C3F7">
+        </LinearLayout>
+            <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="주파수 (Hz)"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:textColor="@color/secondary_text" />-->
+
+            <!--<SeekBar-->
+            <!--android:id="@+id/seekBarFreq"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="5dp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/editTextFreq"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:gravity="center"-->
+            <!--android:inputType="number"-->
+            <!--android:text="250"-->
+            <!--android:textColor="@color/primary_text"-->
+            <!--android:textIsSelectable="false"-->
+            <!--android:textSize="30sp" />-->
+
+
+            <TextView
+                android:id="@+id/LeftValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="왼쪽 db :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/secondary_text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/RightValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="오른쪽 db :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/secondary_text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FrequencyValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/secondary_text"
+                android:textSize="15sp" />
+
+            <!--<SeekBar-->
+            <!--android:id="@+id/seekBarDuration"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="5dp" />-->
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/myFAB"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_play_arrow_white_24dp"-->
+    <!--app:elevation="4dp" />-->
+
+</RelativeLayout>

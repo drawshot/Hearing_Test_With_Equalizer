@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="list_item_01">-10dB</string>
+    <string name="list_item_02">-5dB</string>
+    <string name="list_item_03">0dB</string>
+    <string name="list_item_04">5dB</string>
+    <string name="list_item_05">10dB</string>
+    <string name="list_item_06">15dB</string>
+    <string name="list_item_07">20dB</string>
+    <string name="list_item_08">25dB</string>
+    <string name="list_item_09">30dB</string>
+    <string name="list_item_10">35dB</string>
+    <string name="list_item_11">40dB</string>
+    <string name="list_item_12">45dB</string>
+    <string name="list_item_13">50dB</string>
+    <string name="list_item_14">55dB</string>
+    <string name="list_item_15">60dB</string>
+    <string name="list_item_16">65dB</string>
+    <string name="list_item_17">70dB</string>
+    <string name="list_item_18">75dB</string>
+    <string name="list_item_19">80dB</string>
+    <string name="list_item_20">85dB</string>
+    <string name="list_item_21">90dB</string>
+    <string name="list_item_22">95dB</string>
+    <string name="list_item_23">100dB</string>
+    <string name="list_item_24">105dB</string>
+    <string name="list_item_25">110dB</string>
+
+</resources>

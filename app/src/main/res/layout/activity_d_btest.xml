@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8f1ea"
+    tools:context="com.changwon.wooogi.frequency.dBTest">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/testLeft"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/test0.5down"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/test0.5down"
+            android:background="#6b70e1"
+            android:onClick="onClick1"
+            android:text="Left"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/testRight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/testStop"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/testStop"
+            android:background="#e5768d"
+            android:onClick="onClick1"
+            android:text="Right"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/testfrequencytext"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/testfrequencydown"
+            android:layout_toEndOf="@+id/testAmp"
+            android:layout_toRightOf="@+id/testAmp"
+            android:background="#0000ff"
+            android:gravity="center_horizontal"
+            android:text="1000 Hz"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/testfrequencydown"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/testLeft"
+            android:layout_toLeftOf="@+id/testfrequencytext"
+            android:layout_toStartOf="@+id/testfrequencytext"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/testfrequencyup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/testfrequencytext"
+            android:layout_toEndOf="@+id/testfrequencytext"
+            android:layout_toRightOf="@+id/testfrequencytext"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/testAmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/testfrequencytext"
+            android:text="Amp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/testAmptest"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/testfrequencyup"
+            android:layout_toEndOf="@+id/testAmp"
+            android:layout_toRightOf="@+id/testAmp"
+            android:background="#0000ff"
+            android:gravity="center_horizontal"
+            android:text="1.0000"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+        <TextView
+            android:id="@+id/test0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.5down"
+            android:layout_alignBottom="@+id/test0.5down"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="0.5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.5down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.5up"
+            android:layout_alignBottom="@+id/test0.5up"
+            android:layout_toLeftOf="@+id/test0.00005up"
+            android:layout_toStartOf="@+id/test0.00005up"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.5up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/testAmptest"
+            android:layout_toEndOf="@+id/test0.1down"
+            android:layout_toRightOf="@+id/test0.1down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.1down"
+            android:layout_alignBottom="@+id/test0.1down"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="0.1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.1down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.5down"
+            android:layout_toLeftOf="@+id/test0.1up"
+            android:layout_toStartOf="@+id/test0.1up"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.1up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.1down"
+            android:layout_alignBottom="@+id/test0.1down"
+            android:layout_toEndOf="@+id/test0.5down"
+            android:layout_toRightOf="@+id/test0.5down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.05down"
+            android:layout_alignBottom="@+id/test0.05down"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="0.05"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.05down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.05up"
+            android:layout_alignBottom="@+id/test0.05up"
+            android:layout_alignLeft="@+id/test0.1down"
+            android:layout_alignStart="@+id/test0.1down"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.05up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.1up"
+            android:layout_toEndOf="@+id/test0.1down"
+            android:layout_toRightOf="@+id/test0.1down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.0001down"
+            android:layout_alignBottom="@+id/test0.0001down"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="0.01"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.01down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.01"
+            android:layout_alignBottom="@+id/test0.01"
+            android:layout_alignLeft="@+id/test0.05down"
+            android:layout_alignStart="@+id/test0.05down"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.01up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.01down"
+            android:layout_alignBottom="@+id/test0.01down"
+            android:layout_alignLeft="@+id/test0.05up"
+            android:layout_alignStart="@+id/test0.05up"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+
+        <TextView
+            android:id="@+id/test0.005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.005down"
+            android:layout_alignBottom="@+id/test0.005down"
+            android:layout_alignEnd="@+id/testfrequencytext"
+            android:layout_alignRight="@+id/testfrequencytext"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:text="0.005"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.005down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.005up"
+            android:layout_alignBottom="@+id/test0.005up"
+            android:layout_toEndOf="@+id/test0.0005"
+            android:layout_toRightOf="@+id/test0.0005"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.005up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/testAmptest"
+            android:layout_toEndOf="@+id/test0.005down"
+            android:layout_toRightOf="@+id/test0.005down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.001down"
+            android:layout_alignBottom="@+id/test0.001down"
+            android:layout_alignLeft="@+id/test0.005"
+            android:layout_alignStart="@+id/test0.005"
+            android:text="0.001"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.001down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.001up"
+            android:layout_alignBottom="@+id/test0.001up"
+            android:layout_alignLeft="@+id/test0.005down"
+            android:layout_alignStart="@+id/test0.005down"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.001up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.005up"
+            android:layout_toEndOf="@+id/test0.005down"
+            android:layout_toRightOf="@+id/test0.005down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.0005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.0005down"
+            android:layout_alignBottom="@+id/test0.0005down"
+            android:layout_alignLeft="@+id/test0.001"
+            android:layout_alignStart="@+id/test0.001"
+            android:text="0.0005"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.0005down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.0005up"
+            android:layout_alignBottom="@+id/test0.0005up"
+            android:layout_alignLeft="@+id/test0.001down"
+            android:layout_alignStart="@+id/test0.001down"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.0005up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.001up"
+            android:layout_toEndOf="@+id/test0.001down"
+            android:layout_toRightOf="@+id/test0.001down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.0001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.01up"
+            android:layout_alignBottom="@+id/test0.01up"
+            android:layout_alignLeft="@+id/test0.0005"
+            android:layout_alignStart="@+id/test0.0005"
+            android:text="0.0001"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.0001down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/test0.0005down"
+            android:layout_alignStart="@+id/test0.0005down"
+            android:layout_below="@+id/test0.0005down"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.0001up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.0005up"
+            android:layout_toEndOf="@+id/test0.0005down"
+            android:layout_toRightOf="@+id/test0.0005down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.00005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/test0.00001"
+            android:text="0.00005"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.00005down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.01down"
+            android:layout_toEndOf="@+id/test0.00005"
+            android:layout_toRightOf="@+id/test0.00005"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.00005up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.00005down"
+            android:layout_alignBottom="@+id/test0.00005down"
+            android:layout_alignEnd="@+id/testPlay"
+            android:layout_alignRight="@+id/testPlay"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.00001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/test0.00001down"
+            android:layout_alignBottom="@+id/test0.00001down"
+            android:layout_toLeftOf="@+id/test0.00001down"
+            android:layout_toStartOf="@+id/test0.00001down"
+            android:text="0.00001"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.00001down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/test0.0001down"
+            android:layout_alignStart="@+id/test0.0001down"
+            android:layout_below="@+id/test0.0001down"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/test0.00001up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/test0.0001up"
+            android:layout_toEndOf="@+id/test0.00001down"
+            android:layout_toRightOf="@+id/test0.00001down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <TextView
+            android:id="@+id/test0.000001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/test0.001"
+            android:layout_alignRight="@+id/test0.001"
+            android:layout_below="@+id/testStop"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="19dp"
+            android:text="0.000001"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/test0.000001down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/newarrowdown"
+            android:onClick="onClick1"
+            android:layout_alignBaseline="@+id/test0.000001"
+            android:layout_alignBottom="@+id/test0.000001"
+            android:layout_toRightOf="@+id/test0.001"
+            android:layout_toEndOf="@+id/test0.001" />
+
+        <Button
+            android:id="@+id/test0.000001up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/test0.000001down"
+            android:layout_alignBottom="@+id/test0.000001down"
+            android:layout_toEndOf="@+id/test0.000001down"
+            android:layout_toRightOf="@+id/test0.000001down"
+            android:background="@drawable/newarrowup"
+            android:onClick="onClick1" />
+
+        <Button
+            android:id="@+id/testPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/test0.00005down"
+            android:layout_alignStart="@+id/test0.00005down"
+            android:layout_below="@+id/test0.00005down"
+            android:background="#f47791"
+            android:onClick="onClick1"
+            android:text="Play"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/testStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff00"
+            android:onClick="onClick1"
+            android:text="Stop"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/test0.00001down"
+            android:layout_alignRight="@+id/testfrequencyup"
+            android:layout_alignEnd="@+id/testfrequencyup" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

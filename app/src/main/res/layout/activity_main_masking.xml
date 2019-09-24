@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e6eb"
+    tools:context="com.changwon.wooogi.frequency.MainTest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#323743"
+        android:id="@+id/relativeLayout1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="29.8dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="마스킹 화면"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소리가 들리면 아래 버튼을 눌러주세요."
+        android:textSize="15sp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/btn_left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/newhearingbutton"
+        android:onClick="onClick"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+
+
+
+
+
+</RelativeLayout>

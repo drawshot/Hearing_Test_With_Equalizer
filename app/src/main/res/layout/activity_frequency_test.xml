@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.changwon.wooogi.frequency.FrequencyTest">
+
+    <TextView
+        android:id="@+id/text_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="223dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/text_dval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="223dp"
+        android:layout_below="@+id/text_View"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/text_vol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="223dp"
+        android:layout_below="@+id/text_dval"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/KEYCODE_VOLUME_UP"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="up"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:layout_above="@+id/btn_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginEnd="80dp" />
+    <Button
+        android:id="@+id/KEYCODE_VOLUME_DOWN"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:text="down"
+        android:background="@drawable/backyellow"
+        android:layout_above="@+id/btn_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:text="1000주파수"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_above="@+id/btn_4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="74dp" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:text="2000주파수"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_above="@+id/btn_4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:text="4000주파수"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_above="@+id/btn_8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:text="8000주파수"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_above="@+id/btn_55"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_22"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:text="250주파수"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_55"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:background="@drawable/backyellow"
+        android:text="500주파수"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_above="@+id/btn_22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

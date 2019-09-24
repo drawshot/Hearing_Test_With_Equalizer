@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.changwon.wooogi.frequency">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/new_icon_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainTest" />
+        <activity android:name=".Result" />
+        <activity android:name=".FrequencyTest" />
+        <activity android:name=".VolumeCheck" />
+        <activity android:name=".MenualTest" />
+        <activity android:name=".dBTest" />
+        <activity android:name=".MainMasking" />
+        <activity android:name=".MainResult" />
+        <activity android:name=".TestResult" />
+        <activity android:name=".ResultList" />
+        <activity android:name=".ListResult" />
+        <activity android:name=".MenualResult" />
+        <activity android:name=".Equalizer" />
+        <activity android:name=".MainTestPre"></activity>
+    </application>
+
+</manifest>

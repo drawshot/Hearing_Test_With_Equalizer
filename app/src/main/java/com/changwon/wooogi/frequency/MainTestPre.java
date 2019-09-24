@@ -1,0 +1,31 @@
+package com.changwon.wooogi.frequency;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainTestPre extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_test_pre);
+
+        Button btn_test_start = (Button) findViewById(R.id.btn_test_start);
+
+        btn_test_start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(MainTestPre.this,MainTest.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+    }
+
+
+}
