@@ -53,6 +53,6 @@ Hearable 디바이스는 개인 청력 상태에 대한 양측 주파수별 보�
 * 안드로이드 롤리팝 이상 지원
 
 ### 사용 예제
-![equalizer_1](https://user-images.githubusercontent.com/26424846/65609158-438a7700-dfea-11e9-8dd5-23ec55c72b0c.jpg)
+![equalizer_1](https://user-images.githubusercontent.com/26424846/65661138-ca336880-e06b-11e9-835e-b4e839e1a0ad.jpg)
 ![equalizer_2](https://user-images.githubusercontent.com/26424846/65609196-54d38380-dfea-11e9-8c75-f9b2cd9133b1.jpg)
 ![equalizer_3](https://user-images.githubusercontent.com/26424846/65609220-5f8e1880-dfea-11e9-91a6-1588088da850.jpg)
